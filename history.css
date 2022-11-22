@@ -1,0 +1,69 @@
+.history{
+ width: 720px;
+}
+.intro-history{
+ padding: var(--margin-btwn-sections) var(--padding-lr);
+}
+.history-h1{
+ line-height: 170%;
+ font-size: calc(var(--h1-size)/1.2);
+ letter-spacing: calc(var(--h1-ls)/3);
+}
+.text-history{
+ display: flex;
+ padding: var(--margin-btwn-sections) var(--padding-lr);
+ column-gap: 10%;
+ justify-content: space-between;
+ position: relative;
+}
+.club-history{
+ color: red;
+ font-weight: bold;
+}
+.text1 .txt{
+ flex: 1;
+}
+.text-history::after{
+ content: '';
+ position: absolute;
+ inset: 0;
+ z-index: -1;
+}
+.text-history::before{
+ content:'';
+ position: absolute;
+ inset: 0;
+ background-position: center;
+ background-size: cover;
+ z-index: -2;
+ background-attachment: fixed;
+}
+.txt{
+   color: black;
+}
+.texts{
+ display: flex;
+ flex-direction: column;
+ row-gap: var(--margin-btwn-sections);
+}
+.text1::before{
+background-image: url(/ressources/foundation/foundation1.jpg);
+}
+.text2::before{
+ background-image: url(/ressources/foundation/foundation2.jpg);
+ }
+ .text3::before{
+  background-image: url(/ressources/foundation/foundation3.jpg);
+  }
+  .text4::before{
+   background-image: url(/ressources/foundation/foundation4.jpg);
+   }
+.text1::after,.text3::after{
+background-color: var(--light-blue1);
+opacity: .85;
+}
+
+.text2::after,.text4::after{
+ background-color: var(--bg-color);
+opacity: .8;
+}

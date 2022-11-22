@@ -1,0 +1,213 @@
+.hero-players{
+ position: relative;
+ display: flex;
+ align-items: center;
+ height: 100vh;
+ padding: 0 var(--padding-lr);
+}
+.hero-players a{
+ position: absolute;
+ bottom: 2rem;
+ right: var(--padding-lr);
+ z-index: 3;
+}
+.players{
+ color: red;
+ font-weight: bold;
+}
+.hero-players img{
+ position: absolute;
+ inset: 0;
+z-index: 1;
+width: 100%;
+height: 100%;
+}
+.hero-players .headline{
+z-index: 3;
+}
+.hero-players::before{
+ content: '';
+ position: absolute;
+ inset: 0;
+ background-image: linear-gradient(to right, rgb(0,0,0), transparent);
+ z-index: 2;
+}
+.goalkeepers,.deffenders,.midfielders,.forwards{
+padding: var(--padding-lr);
+margin-top: calc(var(--margin-btwn-sections));
+display: flex;
+flex-direction: column;
+row-gap: calc(var(--margin-btwn-sections)/2);
+}
+.cards{
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ column-gap: calc(var(--margin-btwn-sections)*1.25);
+ row-gap: calc(var(--margin-btwn-sections)/2);
+}
+.container{
+ flex: 1;
+ height: 500px;
+ position: relative;
+ min-width: 400px;
+}
+.card{
+ position: absolute;
+ inset: 0;
+ transform-style:preserve-3d ;
+ transition: 1s;
+ cursor: pointer;
+}
+.card:hover{
+ transform: rotateY(180deg);
+}
+.profile-pic{
+ position: absolute;
+ inset: 0;
+ z-index: 2;
+ background-position: center;
+ background-size: cover;
+}
+.profile-pic img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ object-position: center;
+}
+.front{
+ position: absolute;
+ inset: 0;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ backface-visibility: hidden;
+ padding: 1.5rem;
+}
+.front::before{
+ content: '';
+ position: absolute;
+ inset: 0;
+ background-image: linear-gradient(to bottom, transparent , var(--primary-color));
+ z-index: 3;
+}
+.cards img{
+ width: 30px;
+ z-index: 4;
+}
+.front-flag{
+ align-self: flex-end;
+}
+.front::after{
+ content: '';
+ position: absolute;
+ inset: 0;
+ background-color: var(--bg-color);
+ z-index: 1;
+}
+.player-info{
+ z-index: 4;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.back{
+ position: absolute;
+ inset: 0;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ padding: 1.5rem;
+ transform: rotateY(180deg);
+}
+.back::before{
+ content: '';
+ position: absolute;
+ inset: 0;
+ background-image: linear-gradient(to bottom, rgba(239, 1, 7, 0.2) , var(--primary-color));
+ z-index: 3;
+ filter: blur(1px);
+}
+.back .profile-pic{
+ filter: blur(1px);
+}
+.player-back-info{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ z-index: 3;
+}
+.genral-info{
+ display: flex;
+ flex-direction: column;
+ row-gap: 1.5rem;
+ font-size: var(--p-size);
+ font-weight: 400;
+ z-index: 3;
+}
+.gen-txt{
+ color: var(--input-hover);
+}
+.value{
+ color: White;
+ margin-left: 1.5rem;
+ font-weight: 500;
+}
+.back .social-media{
+ align-self: flex-end;
+ z-index: 3;
+}
+.ramsdale{
+ background-image: url(/ressources/players/ramsdale.png);
+}
+.turner{
+ background-image: url(/ressources/players/matt.png);
+}
+.tierney{
+ background-image: url(/ressources/players/tierney.png);
+}
+.white{
+ background-image: url(/ressources/players/ben.png);
+}
+.gabriel{
+ background-image: url(/ressources/players/gabriel.png);
+}
+.saliba{
+ background-image: url(/ressources/players/saliba.png);
+}
+.tomiyasu{
+ background-image: url(/ressources/players/takehiro.png);
+}
+.zinchenko{
+ background-image: url(/ressources/players/zinchenko.png);
+}
+.partey{
+ background-image: url(/ressources/players/party.png);
+}
+.xhaka{
+ background-image: url(/ressources/players/xhaka.png);
+}
+.saka{
+ background-image: url(/ressources/players/saka.png);
+}
+.odegard{
+ background-image: url(/ressources/players/odegard.png);
+}
+.vieira{
+ background-image: url(/ressources/players/viera.png);
+}
+.neny{
+ background-image: url(/ressources/players/neny.png);
+}
+.marquinhos{
+ background-image: url(/ressources/players/marquinhos.png);
+}
+.martenelli{
+ background-image: url(/ressources/players/martenili.png);
+}
+.jesus{
+ background-image: url(/ressources/players/jesus.png);
+}
+.nketiah{
+ background-image: url(/ressources/players/nketiah.png);
+}
